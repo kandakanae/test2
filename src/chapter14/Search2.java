@@ -49,6 +49,7 @@ public class Search2 extends HttpServlet {
 				out.println("<br>");
 				out.println(rs.getInt("price"));
 
+
 			}
 
 			st.close();

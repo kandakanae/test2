@@ -1,16 +1,20 @@
 package chapter14;
 
-import tool.Page;
 import java.io.IOException;
 import java.io.PrintWriter;
-import javax.servlet.ServletException;
-import javax.servlet.http.*;
-import javax.servlet.annotation.WebServlet;
-import javax.naming.InitialContext;
-import javax.sql.DataSource;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+
+import javax.naming.InitialContext;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.sql.DataSource;
+
+import tool.Page;
 
 @WebServlet(urlPatterns={"/chapter14/search2"})
 public class Search2 extends HttpServlet {
@@ -39,6 +43,9 @@ public class Search2 extends HttpServlet {
 				out.println(rs.getString("name"));
 				out.println("：");
 				out.println(rs.getInt("price"));
+				out.println(rs.getInt("price"));
+				out.println(rs.getInt("price"));
+
 				out.println("<br>");
 			}
 

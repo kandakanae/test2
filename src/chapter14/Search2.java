@@ -38,14 +38,12 @@ public class Search2 extends HttpServlet {
 			ResultSet rs=st.executeQuery();
 
 			while (rs.next()) {
-
-				out.println("こんにちは");
+				out.println(rs.getInt("id"));
 				out.println("：");
+				out.println(rs.getInt("name"));
 				out.println("：");
 				out.println(rs.getInt("price"));
-
 				out.println("<br>");
-				out.println(rs.getInt("price"));
 
 
 			}

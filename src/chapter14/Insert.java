@@ -41,6 +41,7 @@ public class Insert extends HttpServlet {
 			if (line>0) {
 				out.println("追加に成功しました。");
 				out.println("成功");
+				out.println("ほんとにできた？");
 			}
 
 			st.close();

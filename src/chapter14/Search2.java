@@ -38,6 +38,7 @@ public class Search2 extends HttpServlet {
 			ResultSet rs=st.executeQuery();
 
 			while (rs.next()) {
+
 				out.println("：");
 				out.println(rs.getInt("name"));
 				out.println("：");

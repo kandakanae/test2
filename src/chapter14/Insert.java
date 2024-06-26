@@ -42,6 +42,7 @@ public class Insert extends HttpServlet {
 				out.println("追加に成功しました。");
 				out.println("成功");
 				out.println("こっちはこっちで送信する");
+				out.println("ほんとにできた？");
 			}
 
 			st.close();
